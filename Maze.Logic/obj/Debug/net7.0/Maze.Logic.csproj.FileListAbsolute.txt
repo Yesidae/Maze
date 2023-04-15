@@ -1,0 +1,12 @@
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\bin\Debug\net7.0\Maze.Logic.deps.json
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\bin\Debug\net7.0\Maze.Logic.dll
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\bin\Debug\net7.0\Maze.Logic.pdb
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.dll
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\refint\Maze.Logic.dll
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\Maze.Logic.pdb
+C:\Users\USUARIO\Documents\Proyectos\Maze\Maze\Maze.Logic\obj\Debug\net7.0\ref\Maze.Logic.dll
