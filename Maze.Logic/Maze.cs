@@ -96,57 +96,24 @@ namespace Maze.Logic
             var i = 1;
             var j = 0;
             _maze[i, j] = '→';
-            //do
-            //{
-            //    if (_maze[i, j + 1] == ' ' && _maze[i,j] != '←')
-            //    {
-            //            _maze[i, j ] = '→';
-            //            j++;
-            //    } 
-            //    else if (_maze[i + 1, j] == ' ')
-            //    {
-            //        _maze[i, j ] = '↓';
-            //        i++;
-            //    }
-            //    else if (_maze[i, j - 1] == ' ')
-            //    {
-            //        _maze[i, j] = '←';
-            //        j--;
-            //    }
-            //    else if (_maze[i, j] == '←')
-            //    {
-            //        if (_maze[i + 1, j] == ' ')
-            //        {
-            //            _maze[i , j] = '↓';
-            //            i++;
-            //        }
-            //    }
-
-            //    else break;
-            //} while (i != N - 1 && j != N - 2);
-
-
             do
             {
-                // Mueve el marcador hacia la derecha si la siguiente celda a la derecha está vacía y no es la celda de regreso
+
                 if (_maze[i, j + 1] == ' ' && _maze[i, j] != '←')
                 {
                     _maze[i, j] = '→';
                     j++;
                 }
-                // Mueve el marcador hacia abajo si la siguiente celda debajo está vacía
                 else if (_maze[i + 1, j] == ' ')
                 {
-                    _maze[i, j] = '↓';
+                    _maze[i, j ] = '↓';
                     i++;
                 }
-                // Mueve el marcador hacia la izquierda si la siguiente celda a la izquierda está vacía y no es la celda de regreso
-                // else if (_maze[i, j - 1] == ' ')
-                // {
-                //     _maze[i, j] = '←';
-                //     j--;
-                // }
-                // Si la celda de regreso es '←', mueve el marcador hacia abajo si la siguiente celda debajo está vacía
+                else if (_maze[i, j - 1] != '█')
+                {
+                    _maze[i, j] = '←';
+                    j--;
+                }
                 else if (_maze[i, j] == '←')
                 {
                     if (_maze[i + 1, j] == ' ')
@@ -154,19 +121,61 @@ namespace Maze.Logic
                         _maze[i, j] = '↓';
                         i++;
                     }
-                    // Si la celda de regreso es '←' y la siguiente celda a la izquierda está vacía, mueve el marcador hacia la izquierda
-                    else if (_maze[i, j] == '←' && _maze[i, j - 1] == ' ')
+                    else if (_maze[i, j] == '←' && _maze[i - 1, j] != '█')
                     {
                         _maze[i, j] = '←';
                         j--;
                     }
                 }
-                // Si no se puede mover en ninguna dirección, sale del bucle
-                else
-                {
-                    break;
-                }
-            } while (i != N - 1 && j != N - 2);
+                
+                    else break;
+            } while (j != N - 1 && i != N - 1);
+
+            //do
+            //{
+            //    // Mueve el marcador hacia la derecha si la siguiente celda a la derecha está vacía y no es la celda de regreso
+            //    if (_maze[i, j + 1] == ' ' && _maze[i, j] != '←')
+            //    {
+            //        j++;
+            //        _maze[i, j] = '→';
+
+            //    }
+            //    // Mueve el marcador hacia abajo si la siguiente celda debajo está vacía
+            //    else if (_maze[i + 1, j] == ' ')
+            //    {
+            //        i++;
+            //        _maze[i, j] = '↓';
+
+            //    }
+            //    // Mueve el marcador hacia la izquierda si la siguiente celda a la izquierda está vacía y no es la celda de regreso
+            //    else if (_maze[i, j - 1] == ' ')
+            //    {
+            //        _maze[i, j] = '←';
+            //        j--;
+            //    }
+            //    // Si la celda de regreso es '←', mueve el marcador hacia abajo si la siguiente celda debajo está vacía
+            //    else if (_maze[i, j] == '←')
+            //    {
+            //        if (_maze[i + 1, j] == ' ')
+            //        {
+            //            i++;
+            //            _maze[i, j] = '↓';
+
+            //        }
+            //        // Si la celda de regreso es '←' y la siguiente celda a la izquierda está vacía, mueve el marcador hacia la izquierda
+            //        else if (_maze[i, j] == '←' && _maze[i, j - 1] == ' ')
+            //        {
+            //            j--;
+            //            _maze[i, j] = '←';
+
+            //        }
+            //    }
+            //    // Si no se puede mover en ninguna dirección, sale del bucle
+            //    else
+            //    {
+            //        break;
+            //    }
+            //} while (j != N && i != N - 1);
         }
     }
 }
